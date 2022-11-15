@@ -58,12 +58,12 @@ function initializeServiceWorker() {
       navigator.serviceWorker.register('./sw.js').then((reg) => {
         // B4. TODO - Once the service worker has been successfully registered, console
         //            log that it was successful.
-        console.log('Registration passed with ${reg}');
+        console.log('Registration passed!');
       })
         // B5. TODO - In the event that the service worker registration fails, console
         //            log that it has failed.
       .catch(function(error) {
-        console.log('Registration failed with ${error}')
+        console.log('Registration failed, error: ' + error)
       })
     // STEPS B6 ONWARDS WILL BE IN /sw.js
     })
