@@ -59,7 +59,7 @@ function initializeServiceWorker() {
         // B4. TODO - Once the service worker has been successfully registered, console
         //            log that it was successful.
         console.log('Registration passed with ${reg}');
-      )}
+      })
         // B5. TODO - In the event that the service worker registration fails, console
         //            log that it has failed.
       .catch(function(error) {
