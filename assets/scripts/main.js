@@ -119,7 +119,7 @@ async function getRecipes() {
           // A7. TODO - For each fetch response, retrieve the JSON from it using .json().
           //            NOTE: .json() is ALSO asynchronous, so you will need to use
           //            "await" again
-          var resp_json = await.fetch_resp.json();
+          var resp_json = await fetch_resp.json();
           // A8. TODO - Add the new recipe to the recipes array
           list_of_recipies.push(resp_json);
           // A9. TODO - Check to see if you have finished retrieving all of the recipes,
