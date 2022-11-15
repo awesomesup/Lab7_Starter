@@ -126,20 +126,22 @@ async function getRecipes() {
           //            if you have, then save the recipes to storage using the function
           //            we have provided. Then, pass the recipes array to the Promise's
           //            resolve() method.
-          var len_URL = RECIPE_URLS.length 
-          if (i == len_URL -1) {
+       
+          
+          if (recipe_link == RECIPE_URLS[RECIPE_URLS.length-1]){
             
             saveRecipesToStorage(list_of_recipies);
             resolve(list_of_recipies);
           }
+         }
           // A10. TODO - Log any errors from catch using console.error
-          catch (error_caught) {
-            console.error(error_caught);
-            // A11. TODO - Pass any errors to the Promise's reject() function
-            reject(error_caught);
-          }
-        }
-    }))
+         catch (error_caught) {
+          console.error(error_caught);
+          // A11. TODO - Pass any errors to the Promise's reject() function
+          reject(error_caught);
+         }
+      }
+  }))
 }
 
 /**
